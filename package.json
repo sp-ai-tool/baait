@@ -1,20 +1,42 @@
 {
   "name": "baait",
-  "displayName": "bitahead-ai-tools",
-  "description": "ai commands and tools",
-  "version": "0.0.1",
+  "displayName": "BitAhead AI Tools",
+  "description": "AI commands and tools for VS Code",
+  "version": "0.0.2",
+  "publisher": "sp-ai-tool",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sp-ai-tool/baait"
+  },
+  "bugs": {
+    "url": "https://github.com/sp-ai-tool/baait/issues"
+  },
+  "homepage": "https://github.com/sp-ai-tool/baait#readme",
+  "baseContentUrl": "https://raw.githubusercontent.com/sp-ai-tool/baait/main",
+  "baseImagesUrl": "https://raw.githubusercontent.com/sp-ai-tool/baait/main",
   "engines": {
     "vscode": "^1.96.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Programming Languages",
+    "Snippets"
   ],
-  "activationEvents": [],
+  "keywords": [
+    "copilot",
+    "review",
+    "git",
+    "code review",
+    "AI"
+  ],
+  "activationEvents": [
+    "onCommand:baait.reviewAndCommentStaged"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "copilot-review-ext.reviewStaged",
+        "command": "baait.reviewAndCommentStaged",
         "title": "BitAhead: Review and Comment Staged Changes"
       }
     ]

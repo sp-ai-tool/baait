@@ -12,7 +12,7 @@ This extension automatically reviews your staged git changes using GitHub Copilo
 - Keeps files open for easy review
 - Shows progress as it reviews each file
 
-![Review Staged Changes](images/review-staged.png)
+![Review Staged Changes](https://raw.githubusercontent.com/sp-ai-tool/baait/main/images/review-staged.png)
 
 ## Requirements
 

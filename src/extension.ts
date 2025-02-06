@@ -31,7 +31,7 @@ async function reviewFile(uri: vscode.Uri): Promise<void> {
 }
 
 export function activate(context: vscode.ExtensionContext): void {
-    let disposable = vscode.commands.registerCommand('copilot-review-ext.reviewStaged', async () => {
+    let disposable = vscode.commands.registerCommand('baait.reviewAndCommentStaged', async () => {
         if (!vscode.workspace.isTrusted) {
             vscode.window.showErrorMessage('Workspace must be trusted to review code');
             return;
